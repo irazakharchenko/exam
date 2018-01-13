@@ -37,9 +37,9 @@ public class SmartArrayApp {
         SmartArray sa = new BaseArray(integers);
 
         sa = new FilterDecorator(sa, pr); // Result: [2, 1, 3];
-        System.out.println(Arrays.toString(sa.toArray()));
+        //System.out.println(Arrays.toString(sa.toArray()));
         sa = new SortDecorator(sa, cmp); // Result: [1, 2, 3]
-        System.out.println(Arrays.toString(sa.toArray()));
+        //System.out.println(Arrays.toString(sa.toArray()));
         sa = new MapDecorator(sa, func); // Result: [2, 4, 6]
 
         // Alternative
